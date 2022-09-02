@@ -46,7 +46,7 @@ if __name__ == "__main__":
         last_scan_date = datetime.now(timezone.utc)
     else:
         with open("last_scan_date.txt", "r") as f:
-            last_scan_date = datetime.fromisoformat(f.read())
+            last_scan_date = datetime.fromisoformat(f.read().strip())
 
     with open("last_scan_date.txt", "w") as f:
         f.write(datetime.now(timezone.utc).isoformat())
