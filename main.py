@@ -2,9 +2,8 @@ from email.message import EmailMessage
 import smtplib
 from woocommerce import API
 from config import *
-import json, os
+import os
 from datetime import datetime, timezone
-import pytz
 import logging
 logging.basicConfig(format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %H:%M:%S', level=logging.INFO)
 
