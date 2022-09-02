@@ -1,0 +1,4 @@
+config.py
+__pycache__
+customers.json
+last_scan_date.txt
