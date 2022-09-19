@@ -26,7 +26,7 @@ def send_email(to, name):
     msg.add_alternative(html, subtype='html')
     with smtplib.SMTP_SSL(host="smtp.yandex.com", port=465) as smtp_obj:  # ENVIAR DESDE UN DOMINIO PERSONALIZADO.
         smtp_obj.ehlo()
-        smtp_obj.login("outreach@graphue.com", "oglqgujfpgpclmrq")
+        smtp_obj.login("outreach@graphue.com", PASSWORD)
         smtp_obj.send_message(msg)
 
     logging.info(f"Email sent to {to}")
